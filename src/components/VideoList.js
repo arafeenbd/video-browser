@@ -1,5 +1,5 @@
 import React from 'react';
-
+import VideoListItem from './VideoListItem';
 // imageUrl : video.snippet.thumbnails.default.url
 
 const VideoList = props => {
@@ -7,13 +7,11 @@ const VideoList = props => {
   return (
     <ul className="col-md-4 list-group">
     {
-      props.videos.map( video => {
-        return (
-          <li key={video.id.videoId}>
-            {video.snippet.title}
-          </li>
-        )
-      })
+        props.videos.map( video => {
+          return (
+            <VideoListItem key={video.etag} video={video} />
+          )
+        })
     }
     </ul>
   )
