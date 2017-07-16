@@ -3,9 +3,8 @@ import VideoListItem from './VideoListItem';
 // imageUrl : video.snippet.thumbnails.default.url
 
 const VideoList = props => {
-  console.log(props.videos)
   return (
-    <ul className="col-md-4 list-group">
+    <ul className="list-group">
     {
         props.videos.map( video => {
           return (
