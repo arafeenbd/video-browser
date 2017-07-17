@@ -1,6 +1,5 @@
 import React from 'react';
 import VideoListItem from './VideoListItem';
-// imageUrl : video.snippet.thumbnails.default.url
 
 const VideoList = props => {
   return (
